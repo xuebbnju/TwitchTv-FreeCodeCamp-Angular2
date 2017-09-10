@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Droid+Serif:400,400italic);
+header, footer {
+  min-width: 768px;
+  padding: 5px 65px 5px 15px;
+  background-color: #5c5457;
+  color: #5c5457;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold; }
+  header h1, footer h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    color: #e1e1e6;
+    font-weight: bold; }
+  header menu, footer menu {
+    position: absolute;
+    right: 0px;
+    bottom: 0px; }
+    header menu .item, footer menu .item {
+      background-color: #e1e1e6;
+      height: 20px;
+      width: 20px;
+      left: 55px;
+      line-height: 20px;
+      padding: 0px 5px;
+      margin: 2px 0px;
+      font-size: 0.8em;
+      margin-right: 0px;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s linear; }
+      header menu .item .circle, footer menu .item .circle {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #5c5457;
+        border-radius: 50%;
+        background-color: #5c5457;
+        margin-right: 10px; }
+    header menu #online .circle, footer menu #online .circle {
+      background-color: #b8cca6; }
+    header menu #offline .circle, footer menu #offline .circle {
+      background-color: #8ea7c2; }
+    header menu .active, header menu .item:hover, footer menu .active, footer menu .item:hover {
+      width: 75px;
+      left: 0px; }
+
+main ul {
+  padding-left: 0; }
+  main ul li {
+    list-style: none;
+    margin: 3px 0px; }
+    main ul li .streaming {
+      font-style: italic; }
+    main ul li .name, main ul li .streaming {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    main ul li .icon {
+      padding: 5px 20px; }
+  main ul .offline {
+    background-color: #4a5e82; }
+  main ul .online {
+    background-color: #b8cca6;
+    color: #5c5457; }
+    main ul .online a, main ul .online a:focus, main ul .online a:hover, main ul .online a:visited {
+      color: #4a5e82; }
+  main ul .hide {
+    display: hidden; }
+
+a, a:focus, a:hover, a:visited {
+  color: #b8cca6; }
+
+@media (min-width: 768px) {
+  .name, .streaming {
+    line-height: 60px;
+    height: 60px; }
+
+  header {
+    padding-left: 65px; } }
+
+/*# sourceMappingURL=app.component.css.map */
